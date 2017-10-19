@@ -1,0 +1,408 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+    <style type="text/css">
+        body {
+            padding-top: 20px;
+        }
+        .bill-icon {
+            width: 100% !important;
+            text-align: center !important;
+        }
+    </style>
+    <script type="application/javascript">
+        $(document).ready(function(){
+            $(".history").sparkline([1500, 1400, 1450, 1300, 1900, 1400, 1500], {
+                type: 'line',
+                width: '100%',
+                height: '30px'
+            });
+
+            $('.ui.dropdown').dropdown();
+            $('.ui.accordion').accordion();
+        });
+
+    </script>
+</head>
+<body>
+
+<div class="ui container">
+
+    <h1>Bills Manager</h1>
+
+    <div class="ui secondary pointing menu">
+        <a class="active item">
+            Dashboard
+        </a>
+        <a class="item">
+            Stats
+        </a>
+        <a class="item">
+            History
+        </a>
+        <a class="item">
+            Places
+        </a>
+        <div class="right menu">
+            <a class="ui item">
+                Settings
+            </a>
+        </div>
+    </div>
+
+    <div class="ui grid" style="margin-top: 20px;">
+
+        <div class="eleven wide column">
+
+            <h2>Bills:</h2>
+
+            <div class="ui cards" style="margin-top: 20px;">
+                <div class="card">
+
+                    <div class="content">
+                        <div class="header">
+                            Electricity
+
+                            <div class="ui top right attached gray label">Not received</div>
+                        </div>
+                        <div class="meta">
+                            September 2017
+                        </div>
+                        <div class="description">
+                            <div class="ui grid">
+                                <div class="seven wide column">
+                                    <i class="massive idea icon bill-icon"></i>
+                                </div>
+                                <div class="nine wide column">
+
+                                    <div class="ui relaxed list">
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Total</a>
+                                                <div class="description">1,000 MKD</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+
+                                                <a class="header">History</a>
+                                                <div class="description history"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <span class="left floated like">
+                          <i class="mail icon"></i>
+                          Mark as received
+                        </span>
+                        <div class="right floated ui dropdown">
+                            <div class="text">Options</div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item">Received</div>
+                                <div class="item">Paid</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+
+                    <div class="content">
+                        <div class="header">
+                            Internet & Cable TV
+
+                            <div class="ui top right attached green label">Paid</div>
+                        </div>
+                        <div class="meta">
+                            September 2017
+                        </div>
+                        <div class="description">
+                            <div class="ui grid">
+                                <div class="seven wide column">
+                                    <i class="massive world icon bill-icon"></i>
+                                </div>
+                                <div class="nine wide column">
+
+                                    <div class="ui relaxed list">
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Total</a>
+                                                <div class="description">1,000 MKD</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+
+                                                <a class="header">History</a>
+                                                <div class="description history"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a href="" class="left floated like">
+                            <i class="money icon"></i>
+                            Undo payment
+                        </a>
+                        <div class="right floated ui dropdown">
+                            <div class="text">Options</div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item">Received</div>
+                                <div class="item">Paid</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+
+                    <div class="content">
+                        <div class="header">
+                            Water
+
+                            <div class="ui top right attached red label">Received</div>
+                        </div>
+                        <div class="meta">
+                            September 2017
+                        </div>
+                        <div class="description">
+                            <div class="ui grid">
+                                <div class="seven wide column">
+                                    <i class="massive shower icon bill-icon"></i>
+                                </div>
+                                <div class="nine wide column">
+
+                                    <div class="ui relaxed list">
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Total</a>
+                                                <div class="description">1,000 MKD</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+
+                                                <a class="header">History</a>
+                                                <div class="description history"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <span class="left floated like">
+                          <i class="money icon"></i>
+                          Mark as paid
+                        </span>
+                        <div class="right floated ui dropdown">
+                            <div class="text">Options</div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item">Received</div>
+                                <div class="item">Paid</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="five wide column">
+
+            <h2>Choose a month:</h2>
+
+            <div class="ui accordion middle aligned relaxed divided list">
+
+                <div class="title active">
+                    <i class="ui large calendar icon"></i>
+                    2017
+                </div>
+                <div class="content active">
+                    <div class="ui link middle aligned relaxed list">
+                        <div class="item">
+                            <a href="">
+                                September
+                                <div class="ui right floated gray horizontal label">
+                                    <i class="help circle icon"></i>1
+                                </div>
+                                <div class="ui right floated red horizontal label">
+                                    <i class="remove icon"></i>1
+                                </div>
+                                <div class="ui right floated green horizontal label">
+                                    <i class="checkmark icon"></i>4
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                August
+                                <div class="ui right floated gray horizontal label">
+                                    <i class="help circle icon"></i>1
+                                </div>
+                                <div class="ui right floated red horizontal label">
+                                    <i class="remove icon"></i>1
+                                </div>
+                                <div class="ui right floated green horizontal label">
+                                    <i class="checkmark icon"></i>4
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                July
+                                <div class="ui right floated gray horizontal label">
+                                    <i class="help circle icon"></i>1
+                                </div>
+                                <div class="ui right floated red horizontal label">
+                                    <i class="remove icon"></i>1
+                                </div>
+                                <div class="ui right floated green horizontal label">
+                                    <i class="checkmark icon"></i>4
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                June
+                                <div class="ui right floated gray horizontal label">
+                                    <i class="help circle icon"></i>1
+                                </div>
+                                <div class="ui right floated red horizontal label">
+                                    <i class="remove icon"></i>1
+                                </div>
+                                <div class="ui right floated green horizontal label">
+                                    <i class="checkmark icon"></i>4
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                May
+                                <div class="ui right floated gray horizontal label">
+                                    <i class="help circle icon"></i>1
+                                </div>
+                                <div class="ui right floated red horizontal label">
+                                    <i class="remove icon"></i>1
+                                </div>
+                                <div class="ui right floated green horizontal label">
+                                    <i class="checkmark icon"></i>4
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                April
+                                <div class="ui right floated gray horizontal label">
+                                    <i class="help circle icon"></i>1
+                                </div>
+                                <div class="ui right floated red horizontal label">
+                                    <i class="remove icon"></i>1
+                                </div>
+                                <div class="ui right floated green horizontal label">
+                                    <i class="checkmark icon"></i>4
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                March
+                                <div class="ui right floated gray horizontal label">
+                                    <i class="help circle icon"></i>1
+                                </div>
+                                <div class="ui right floated red horizontal label">
+                                    <i class="remove icon"></i>1
+                                </div>
+                                <div class="ui right floated green horizontal label">
+                                    <i class="checkmark icon"></i>4
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                February
+                                <div class="ui right floated gray horizontal label">
+                                    <i class="help circle icon"></i>1
+                                </div>
+                                <div class="ui right floated red horizontal label">
+                                    <i class="remove icon"></i>1
+                                </div>
+                                <div class="ui right floated green horizontal label">
+                                    <i class="checkmark icon"></i>4
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                January
+                                <div class="ui right floated gray horizontal label">
+                                    <i class="help circle icon"></i>1
+                                </div>
+                                <div class="ui right floated red horizontal label">
+                                    <i class="remove icon"></i>1
+                                </div>
+                                <div class="ui right floated green horizontal label">
+                                    <i class="checkmark icon"></i>4
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    <i class="ui large calendar icon"></i>
+                    2016
+                </div>
+                <div class="content">
+                    <div class="ui link middle aligned relaxed list">
+                        <div class="item"><a href="">December</a></div>
+                        <div class="item"><a href="">November</a></div>
+                        <div class="item"><a href="">October</a></div>
+                        <div class="item"><a href="">September</a></div>
+                        <div class="item"><a href="">August</a></div>
+                        <div class="item"><a href="">July</a></div>
+                        <div class="item"><a href="">June</a></div>
+                        <div class="item"><a href="">May</a></div>
+                        <div class="item"><a href="">April</a></div>
+                        <div class="item"><a href="">March</a></div>
+                        <div class="item"><a href="">February</a></div>
+                        <div class="item"><a href="">January</a></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
